@@ -23,6 +23,21 @@ export const colorsMap = [
     color: "--primary-text-on-secondary-color",
     description: "Use for default text color on secondary background color"
   },
+  { color: "--secondary-color", description: "Use this to emphasise secondary ui components" },
+  { color: "--secondary-hover-color", description: "Use only as a hover on secondary color" },
+  {
+    color: "--secondary-hover-on-secondary-color",
+    description: "Use only as a hover on secondary color on secondary background color"
+  },
+  { color: "--secondary-selected-color", description: "Use this to indicate selected state of secondary items" },
+  {
+    color: "--secondary-selected-hover-color",
+    description: "Use this to indicate hover state on a secondary-selected-color items"
+  },
+  {
+    color: "--secondary-selected-on-secondary-color",
+    description: "Use this to indicate selected state of secondary items on secondary background color"
+  },
   { color: "--secondary-text-color", description: "Use when you need text with lesser importance" },
   {
     color: "--secondary-text-on-secondary-color",
@@ -76,6 +91,12 @@ export const colorsMap = [
   {
     color: "--warning-color-selected-hover",
     description: "Use to indicate hover state on a warning-selected items"
+  },
+  { color: "--traffic-light_green", description: "Use as a positive progress indicator for traffic light options" },
+  { color: "--traffic-light_orange", description: "Use as a warning progress indicator for traffic light options" },
+  {
+    color: "--traffic-light_red",
+    description: "Use as a negative progress indicator for traffic light options"
   },
   // borders
   { color: "--ui-border-color", description: "Border color for ui elements and components (Button, Input...)" },

@@ -8,6 +8,7 @@ export enum ButtonType {
 
 export enum ButtonColor {
   PRIMARY = "primary",
+  SECONDARY = "secondary",
   POSITIVE = "positive",
   NEGATIVE = "negative",
   ON_PRIMARY_COLOR = "on-primary-color",
