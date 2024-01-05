@@ -67,7 +67,7 @@
     "build": "npm run build:react-icons && npm run build:storybook-exports && npm run build:commonjs && npm run build:esm && npm run build:esm:mock-classnames && npm run build:types",
     "build:exports": "./scripts/build-exports.js",
     "build:types": "./scripts/build-types.js",
-    "build:storybook-exports": "./scripts/build-storybook-exports.js",
+    "build:storybook-exports": "node scripts/build-storybook-exports.js",
     "build:commonjs": "webpack --mode production --config webpack/default.config.js",
     "build:esm": "rollup -c",
     "build:esm:mock-classnames": "mock_classnames=on rollup -c",
