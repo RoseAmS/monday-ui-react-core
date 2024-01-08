@@ -1,5 +1,5 @@
 {
-  "name": "monday-ui-react-core",
+  "name": "@roseams/monday-ui-react-core",
   "version": "2.79.2",
   "description": "Official monday.com UI resources for application development in React.js",
   "main": "./dist/main.js",
@@ -88,7 +88,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mondaycom/monday-ui-react-core.git"
+    "url": "git+https://github.com/RoseAmS/monday-ui-react-core.git#fc-palette"
   },
   "author": "",
   "license": "MIT",
@@ -111,7 +111,7 @@
     "classnames": "^2.3.2",
     "framer-motion": "^6.5.1",
     "lodash-es": "^4.17.21",
-    "monday-ui-style": "0.1.206",
+    "monday-ui-style": "git+https://github.com/RoseAmS/monday-ui-style.git",
     "prop-types": "^15.8.1",
     "react-dates": "21.8.0",
     "react-inlinesvg": "^3.0.1",
@@ -274,6 +274,9 @@
   ],
   "storybook-deployer": {
     "commitMessage": "Deploy Storybook [ci-skip]"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "browserslist": [
     "extends browserslist-config-monday"
