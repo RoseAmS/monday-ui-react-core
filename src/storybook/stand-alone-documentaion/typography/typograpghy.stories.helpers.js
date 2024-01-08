@@ -2,15 +2,15 @@ import { Link, Tip } from "vibe-storybook-components";
 
 export const TipHowToUseFonts = () => (
   <Tip title="How to use the fonts?">
-    Figtree and Poppins are both Google Fonts. Click
-    <Link size={Link.sizes.SMALL} href="https://fonts.google.com/specimen/Figtree">
+   Nunito Sans is a Google Font. Click
+    <Link size={Link.sizes.SMALL} href="https://fonts.google.com/specimen/Nunito+Sans">
       here
     </Link>
-    to download Figtree, and click
-    <Link size={Link.sizes.SMALL} href="https://fonts.google.com/specimen/Poppins">
-      here
+    to download Nunito Sans.
+    {/* <Link size={Link.sizes.SMALL} href="https://fonts.google.com/specimen/Poppins">
+    here
     </Link>
-    to download Poppins.
+    to download Poppins.*/}
   </Tip>
 );
 
