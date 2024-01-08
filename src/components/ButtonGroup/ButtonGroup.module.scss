@@ -31,6 +31,10 @@
   background-color: var(--primary-selected-color);
 }
 
+.optionText {
+  color: var(--primary-text-color) !important;
+}
+
 .optionText:not(.disabled) {
   color: var(--primary-text-color);
 }
