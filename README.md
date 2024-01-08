@@ -8,13 +8,12 @@ From [monday.com](https://www.monday.com) React components library - [Modified S
 
 ## Installation
 
-Install the component library by adding a dependency in your `package.json` file and then running `npm install` via terminal
+Install the component library by adding a dependency in your `package.json` file and then running `npm install`
 
 ```json
-// package.json
 "dependencies": {
   "monday-ui-react-core": "https://github.com/RoseAmS/monday-ui-react-core.git#fc-palette",
-};
+}
 ```
 
 ## Usage
