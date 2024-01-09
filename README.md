@@ -6,13 +6,21 @@ From [monday.com](https://www.monday.com) React components library - [Modified S
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | last 4 versions                                                                                                                                                                                                   | last 4 versions                                                                                                                                                                                               | 14+                                                                                                                                                                                                           | last 2 versions                                                                                                                                                                                                               | last 2 versions                                                                                                                                                                                                                     | last 2 versions                                                                                                                                                                                           |
 
-## Installation
+## Installation Component
 
-Install the component library by adding a dependency in your `package.json` file and then running `npm install`
+Install the component library
+
+```
+npm install monday-ui-react-core
+```
+
+## Installation Styles package
+
+Install the styling library by adding a dependency in your `package.json` file and then running `npm install`
 
 ```json
 "dependencies": {
-  "monday-ui-react-core": "https://github.com/RoseAmS/monday-ui-react-core.git#fc-palette",
+  "@mondaydotcomorg/monday-ui-style": "git+https://github.com/RoseAmS/monday-ui-style.git",
 }
 ```
 
@@ -21,13 +29,14 @@ Install the component library by adding a dependency in your `package.json` file
 Components are imported from the library's root entry:
 
 ```javascript
-import Button from "monday-ui-react-core/dist/";
+import { Button } from "monday-ui-react-core";
 ```
 
-In order to load all the relevant CSS, you should import the `main` file at the root of your application file
+In order to load all the relevant CSS, you should import the `tokens` and `index.min.css` file at the root of your application file
 
 ```javascript
-import "monday-ui-react-core/dist/main.css";
+import "monday-ui-react-core/tokens";
+import "@mondaydotcomorg/monday-ui-style/dist/index.min.css";
 ```
 
 ### Font installation
@@ -36,6 +45,7 @@ We don't import fonts ourselves, we work best with the following font -
 Nunito Sans, we recommend adding the following `link` import to your application
 
 ```html
+<link rel="preconnect" href="https://fonts.googleapis.com" />
 <link
   href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,700;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,700&display=swap"
   rel="stylesheet"
@@ -168,7 +178,7 @@ Do this:
 Add the following
 
 ```js
-// vite.config.js
+// vite.config.ts or vite.config.js
 export default {
   define: {
     global: {}
