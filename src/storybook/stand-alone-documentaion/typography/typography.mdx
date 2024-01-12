@@ -49,7 +49,394 @@ More ever this is how we are building our css variable for our main font familie
 
 ## Type styles
 
-We use two key type styles: heading and text
+### This table uses FIGMA NAMES
+
+You can use these styles directly as React in-line styles with object "style="
+
+<Frame>
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+    Large Title
+  </Text>
+  <ExamplesTable
+    data={[
+      {
+        name: (
+          <Heading type={Heading.types.LARGE} weight={Heading.weights.BOLD}>
+            LARGE bold
+          </Heading>
+        ),
+        sass: "{font: 'var(--font-large-bold)'}"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.LARGE} weight={Heading.weights.NORMAL}>
+            LARGE normal
+          </Heading>
+        ),
+        sass: "font: 'var(--font-large-normal)'"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.LARGE} weight={Heading.weights.LIGHT}>
+            LARGE light
+          </Heading>
+        ),
+        sass: "font: 'var(--font-large-light)'"
+      }
+    ]}
+  />
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+    Title 1
+  </Text>
+  <ExamplesTable
+    data={[
+      {
+        name: (
+          <Heading type={Heading.types.H1} weight={Heading.weights.BOLD}>
+            H1 bold
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h1-bold)'"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.H1} weight={Heading.weights.NORMAL}>
+            H1 normal
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h1-normal)'"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.H1} weight={Heading.weights.LIGHT}>
+            H1 light
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h1-light)'"
+      }
+    ]}
+  />
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+    24-Title 2
+  </Text>
+  <ExamplesTable
+    data={[
+      {
+        name: (
+          <Heading type={Heading.types.H2} weight={Heading.weights.BOLD}>
+            H2 bold
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h2-bold)'"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.H2} weight={Heading.weights.NORMAL}>
+            H2 normal
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h2-normal)'"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.H2} weight={Heading.weights.LIGHT}>
+            H2 light
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h2-light)'"
+      }
+    ]}
+  />
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+    22-Title 3
+  </Text>
+  <ExamplesTable
+    data={[
+      {
+        name: (
+          <Heading type={Heading.types.H3} weight={Heading.weights.BOLD}>
+            H3 bold
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h3-bold)'"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.H3} weight={Heading.weights.NORMAL}>
+            H3 normal
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h3-normal)'"
+      },
+      {
+        name: (
+          <Heading type={Heading.types.H3} weight={Heading.weights.LIGHT}>
+            H3 light
+          </Heading>
+        ),
+        sass: "font: 'var(--font-h3-light)'"
+      }
+    ]}
+  />
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+    19-Body
+  </Text>
+  <ExamplesTable
+    data={[
+      {
+        name: (
+          <Text type={Text.types.BODY1} weight={Text.weights.BOLD}>
+            Body1 bold
+          </Text>
+        ),
+        sass: "font: 'var(--font-body1-bold)'"
+      },
+      {
+        name: (
+          <Text type={Text.types.BODY1} weight={Text.weights.NORMAL}>
+            Body1 normal
+          </Text>
+        ),
+        sass: "font: 'var(--font-body1-normal)'"
+      },
+      {
+        name: (
+          <Text type={Text.types.BODY1} weight={Text.weights.LIGHT}>
+            Body1 light
+          </Text>
+        ),
+        sass: "font: 'var(--font-body1-light)'"
+      }
+    ]}
+  />
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+    18-Callout
+  </Text>
+  <ExamplesTable
+    data={[
+      {
+        name: (
+          <Text type={Text.types.BODY2} weight={Text.weights.BOLD}>
+            Body2 bold
+          </Text>
+        ),
+        sass: "font: 'var(--font-body2-bold)'"
+      },
+      {
+        name: (
+          <Text type={Text.types.BODY2} weight={Text.weights.NORMAL}>
+            Body2 normal
+          </Text>
+        ),
+        sass: "font: 'var(--font-body2-normal)'"
+      },
+      {
+        name: (
+          <Text type={Text.types.BODY2} weight={Text.weights.LIGHT}>
+            Body2 light
+          </Text>
+        ),
+        sass: "font: 'var(--font-body2-light)'"
+      }
+    ]}
+  />
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+    17-Subhead
+  </Text>
+  <ExamplesTable
+    data={[
+      {
+        name: (
+          <Text type={Text.types.BODY3} weight={Text.weights.BOLD}>
+            Body3 bold
+          </Text>
+        ),
+        sass: "font: 'var(--font-body3-bold)'"
+      },
+      {
+        name: (
+          <Text type={Text.types.BODY3} weight={Text.weights.NORMAL}>
+            Body3 normal
+          </Text>
+        ),
+        sass: "font: 'var(--font-body3-normal)'"
+      },
+      {
+        name: (
+          <Text type={Text.types.BODY3} weight={Text.weights.LIGHT}>
+            Body3 light
+          </Text>
+        ),
+        sass: "font: 'var(--font-body3-light)'"
+      }
+    ]}
+  />
+  <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+      16-S-Text
+    </Text>
+    <ExamplesTable
+      data={[
+        {
+          name: (
+            <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+              Text1 bold
+            </Text>
+          ),
+          sass: "font: 'var(--font-text1-bold)'",
+        },
+        {
+          name: (
+            <Text type={Text.types.TEXT1} weight={Text.weights.MEDIUM}>
+              Text1 medium
+            </Text>
+          ),
+          sass: "font: 'var(--font-text1-medium)'",
+        },
+        {
+          name: (
+            <Text type={Text.types.TEXT1} weight={Text.weights.NORMAL}>
+              Text1 normal
+            </Text>
+          ),
+          sass: "font: 'var(--font-text1-normal)'",
+        },
+      ]}
+    />
+    
+    <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+      15-Small
+    </Text>
+    <ExamplesTable
+      data={[
+        {
+          name: (
+            <Text type={Text.types.TEXT3} weight={Text.weights.BOLD}>
+              Text3 bold
+            </Text>
+          ),
+          sass: "font: 'var(--font-text3-bold)'",
+        },
+
+        {
+          name: (
+            <Text type={Text.types.TEXT3} weight={Text.weights.MEDIUM}>
+              Text3 medium
+            </Text>
+          ),
+          sass: "font: 'var(--font-text3-medium)'",
+        },
+        {
+          name: (
+            <Text type={Text.types.TEXT3} weight={Text.weights.NORMAL}>
+              Text3 normal
+            </Text>
+          ),
+          sass: "font: 'var(--font-text3-normal)'",
+        },
+      ]}
+    />
+    <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+      14-Tiny
+    </Text>
+    <ExamplesTable
+      data={[
+        {
+          name: (
+            <Text type={Text.types.TEXT2} weight={Text.weights.BOLD}>
+              Text2 bold
+            </Text>
+          ),
+          sass: "font: 'var(--font-text2-bold)'",
+        },
+
+        {
+          name: (
+            <Text type={Text.types.TEXT2} weight={Text.weights.MEDIUM}>
+              Text2 medium
+            </Text>
+          ),
+          sass: "font: 'var(--font-text2-medium)'",
+        },
+        {
+          name: (
+            <Text type={Text.types.TEXT2} weight={Text.weights.NORMAL}>
+              Text2 normal
+            </Text>
+          ),
+          sass: "font: 'var(--font-text2-normal)'",
+        },
+      ]}
+    />
+    <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+      12-Extra Tiny
+    </Text>
+    <ExamplesTable
+      data={[
+        {
+          name: (
+            <Text type={Text.types.TEXT4} weight={Text.weights.BOLD}>
+              Text4 bold
+            </Text>
+          ),
+          sass: "font: 'var(--font-text4-bold)'",
+        },
+
+        {
+          name: (
+            <Text type={Text.types.TEXT4} weight={Text.weights.MEDIUM}>
+              Text4 medium
+            </Text>
+          ),
+          sass: "font: 'var(--font-text4-medium)'",
+        },
+        {
+          name: (
+            <Text type={Text.types.TEXT4} weight={Text.weights.NORMAL}>
+              Text4 normal
+            </Text>
+          ),
+          sass: "font: 'var(--font-text4-normal)'",
+        },
+      ]}
+    />
+    <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
+      Tooltip Tiny
+    </Text>
+    <ExamplesTable
+      data={[
+        {
+          name: (
+            <Text type={Text.types.TEXT5} weight={Text.weights.BOLD}>
+              Text5 bold
+            </Text>
+          ),
+          sass: "font: 'var(--font-text5-bold)'",
+        },
+
+        {
+          name: (
+            <Text type={Text.types.TEXT5} weight={Text.weights.MEDIUM}>
+              Text5 medium
+            </Text>
+          ),
+          sass: "font: 'var(--font-text5-medium)'",
+        },
+        {
+          name: (
+            <Text type={Text.types.TEXT5} weight={Text.weights.NORMAL}>
+              Text5 normal
+            </Text>
+          ),
+          sass: "font: 'var(--font-text5-normal)'",
+        },
+      ]}
+    />
+
+</Frame>
+
+### This table is for monday-ui-react-core original component
+
+We use two key type styles: heading and text:
 
 <Frame>
   <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
@@ -115,7 +502,7 @@ We use two key type styles: heading and text
     ]}
   />
   <Text type={Text.types.TEXT1} weight={Text.weights.BOLD}>
-    H3 - 18px
+    H3 - 22px
   </Text>
   <ExamplesTable
     data={[

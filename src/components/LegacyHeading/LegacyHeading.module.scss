@@ -51,6 +51,10 @@
   @include vibe-heading("h3", "normal");
 }
 
+.elementTypeLARGE {
+  @include vibe-heading("large", "normal");
+}
+
 .elementTypeH5,
 .elementTypeP {
   @include vibe-text("text1", "normal");

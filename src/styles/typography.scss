@@ -28,6 +28,11 @@
 }
 
 $headingClasses: (
+  "large": (
+    "bold",
+    "normal",
+    "light"
+  ),
   "h1": (
     "bold",
     "normal",
@@ -46,12 +51,42 @@ $headingClasses: (
 );
 
 $textClasses: (
+  "body1": (
+    "bold",
+    "normal",
+    "light"
+  ),
+  "body2": (
+    "bold",
+    "normal",
+    "light"
+  ),
+  "body3": (
+    "bold",
+    "normal",
+    "light"
+  ),
   "text1": (
     "bold",
     "medium",
     "normal"
   ),
   "text2": (
+    "bold",
+    "medium",
+    "normal"
+  ),
+  "text3": (
+    "bold",
+    "medium",
+    "normal"
+  ),
+  "text4": (
+    "bold",
+    "medium",
+    "normal"
+  ),
+  "text5": (
     "bold",
     "medium",
     "normal"
